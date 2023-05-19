@@ -668,46 +668,6 @@ body.nav-active { overflow: hidden; }
   height: 100%;
 }
 
-.interview-card { position: relative; }
-
-.interview-card .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60px;
-  height: 60px;
-  justify-content: center;
-  border-radius: var(--radius-circle);
-  color: var(--text-smoky-black);
-}
-
-.interview-card .btn::before,
-.interview-card .btn::after { border-radius: inherit; }
-
-.interview-card .btn::before { background-color: var(--bg-white); }
-
-.interview-card .btn:is(:hover, :focus-visible) { color: var(--text-white); }
-
-.exhibition-card { position: relative; }
-
-.exhibition-card .card-icon {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  background-color: var(--bg-white);
-  width: 40px;
-  height: 40px;
-  border-radius: var(--radius-circle);
-  color: var(--bg-smoky-black);
-  display: grid;
-  place-items: center;
-}
-
-
-
-
-
 /*-----------------------------------*\
   #CTA
 \*-----------------------------------*/
@@ -801,28 +761,6 @@ body.nav-active { overflow: hidden; }
   min-width: 100%;
   scroll-snap-align: start;
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #TESTIMONIALS
-\*-----------------------------------*/
-
-.testi { border-block: 1px solid var(--border-eerie-black); }
-
-.testi-content { padding-inline-start: 15px; }
-
-.testi .section-text {
-  text-indent: -15px;
-  line-height: 1.5;
-  margin-block-end: 20px;
-}
-
-.profile-card .card-banner { display: none; }
-
-.profile-card .card-subtitle { font-size: var(--fontSize-10); }
 
 
 
@@ -1029,29 +967,6 @@ textarea.input-field {
     margin-inline: auto;
   }
 
-
-
-  /**
-   * TESTIMONIALS
-   */
-
-  .profile-card .card-banner {
-    display: block;
-    border-radius: var(--radius-circle);
-  }
-
-  .testi .profile-card {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-
-}
-
-
-
-
-
 /**
  * responsive for large than 768px screen
  */
@@ -1127,10 +1042,6 @@ textarea.input-field {
 
   .tab-btn-item:not(:first-child) {
     border-inline-start: 1px solid var(--border-eerie-black);
-  }
-
-  :is([data-tab-content="interview"], [data-tab-content="exhibition"]) .grid-list {
-    grid-template-columns: 1fr 1fr;
   }
 
 
@@ -1309,10 +1220,6 @@ textarea.input-field {
    */
 
   .tab-content .grid-list { grid-template-columns: 1fr 1fr; }
-
-  :is([data-tab-content="interview"], [data-tab-content="exhibition"], [data-tab-content="awward"]) .grid-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
 
 
 
