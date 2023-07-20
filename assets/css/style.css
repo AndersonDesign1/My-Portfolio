@@ -90,6 +90,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 li { list-style: none; }
@@ -140,7 +141,11 @@ body {
   overflow: hidden;
 }
 
-body.loaded { overflow-y: auto; }
+body.loaded { 
+  overflow-y: auto;
+  
+
+}
 
 body.nav-active { overflow: hidden; }
 

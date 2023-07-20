@@ -739,14 +739,14 @@
 
             <form action="https://getform.io/f/347a3df4-fd2f-4387-bf1c-da43a965ffad" method="post" class="contact-form">
 
-              <input type="text" name="name" placeholder="Full name" autocomplete="off" required class="input-field">
+              <input type="text" name="Name" placeholder="Full name" autocomplete="on" required class="input-field">
 
-              <input type="email" name="email_address" placeholder="Email address" autocomplete="off" required
+              <input type="email" name="Email" placeholder="Email address" autocomplete="on" required
                 class="input-field">
+                <!-- add hidden Honeypot input to prevent spams -->
+                <input type="hidden" name="_gotcha" style="display:none !important">
 
-              <input type="tel" name="phone" placeholder="Phone" autocomplete="off" class="input-field">
-
-              <textarea name="message" placeholder="Enter message" required class="input-field"></textarea>
+              <textarea type="text" name="message" placeholder="Enter message" required class="input-field"></textarea>
 
               <button type="submit" class="btn btn:hover">
                 <span class="span">Send</span>
