@@ -1278,10 +1278,6 @@ textarea.input-field {
 
 }
 
-
-
-
-
 /**
  * responsive for large than 1200px screen
  */
@@ -1305,7 +1301,7 @@ textarea.input-field {
     --fontSize-6: 2rem;
 
   }
-  
+
   /**
    * REUSED STYLE
    */
